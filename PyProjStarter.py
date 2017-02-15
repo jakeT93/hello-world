@@ -37,7 +37,7 @@ wfo.write("#"+supportFile+" -- Created by " + authName)
 wfo.close()
 
 wfo = open(mainFileName,"w")
-
+supportFile = supportFile.replace(".py","",1)
 wfo.write("#"+mainFileName+" -- Created by " + authName)
 wfo.write("\nimport "+supportFile)
 
